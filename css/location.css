@@ -1,0 +1,75 @@
+.loc-main{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+.loc-map{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.main-loc-bx{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 1%;
+   
+}
+.loc-box{
+    background-color:  rgb(223, 219, 211);
+    width: 100%;
+    height: 200px;
+    margin-left: 5%; 
+}
+.loc-box-head{
+    margin-left: 1%;
+    margin-top: 2%;
+    width: 500px;
+    height: 500px;
+}
+.loc-flex{
+    display: flex;
+    overflow: hidden;
+}
+.stats-loc{
+    display: flex;
+    text-align: center;
+}
+.stats-loc h4 span{
+    font-size: 1rem;
+}
+/* users css */
+.user-tbl{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(182, 182, 207, 0.349);
+    display: flex;
+  
+    flex-wrap: wrap;
+    overflow: scroll;
+    margin: 0 auto;
+}
+.card{
+    margin: 1%;
+    height: 40%;
+}
+.user-tbl-list{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 1%;
+    width: 20vw;
+    height: 40vh;
+    background-color: blueviolet;
+}
+.user-tbl-img{
+    border-radius: 8px;
+    margin: 2%;
+    width: auto;
+    height: 70%;
+    overflow: hidden;
+    background-color: black;
+}

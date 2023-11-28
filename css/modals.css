@@ -1,0 +1,66 @@
+.user-info-modmain{
+    display: flex;
+}
+.user-image{
+    width: 200px;
+    background-color: blue;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+.left-user-m{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+}
+.right-user-m{
+    margin-left: 2%;
+    width: 100%;
+    border-left: 1px solid gray;
+}
+.right-user-m span{
+    font-size: 1rem;
+}
+.right-info-m{
+    margin-left: 2%;
+}
+.left-user-m img{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    width: 200px;
+    background-color: blue;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 2%;
+}
+.err-up{
+    margin-left: 10%;
+    padding: 5px 10px;
+    background-color: rgb(75, 161, 161);
+    border-radius: 8px;
+    color: rgb(28, 42, 54);
+    font-size: 0.8rem;
+}
+.upl-inp input{
+   margin-top: 2%;
+}
+
+/* USER COUNT */
+.user-count{
+    display: flex;
+    justify-content: center;
+
+}
+.user-count-cotn{
+    font-size: 2rem;
+    padding: 10px 15px;
+    border: 4px solid var(--text-color);
+    border-radius: 8px;
+    box-shadow: 5px 4px 13px var(--text-color)
+}
+#centertbl tr, th, #centertbl button{
+    color: var(--text-color);
+}

@@ -1,0 +1,24 @@
+.user-post-list{
+    background-color: var(--pallet3);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.user-post-list i{
+    font-size: 2rem;
+    margin-right: 2%;
+    color: var(--user-text-color);
+}
+.user-ann-title{
+    text-align: center;
+    color: var(--text-color);
+    
+}
+.news-title h5{
+    margin: 5%;
+    color: var(--text-color);
+    text-align: center;
+
+}

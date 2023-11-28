@@ -7,6 +7,8 @@
     </div>
     <div class="announ-cont-main">
         <div class="announ-side">
+
+		<script></script>
         
         </div>
         <div class="announ-right">

@@ -31,6 +31,8 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
     <link rel="stylesheet" href="css/announ.css">
     <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/user-css/user-announ.css">
+    <link rel="stylesheet" href="css/user-css/user-report.css">
+    <link rel="stylesheet" href="css/user-css/user-report.css">
     
     <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -50,9 +52,13 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
     </nav>
     <nav class="topnav">
     <div class="text1">user</div>
+    <div class="rprt-status" id="rprt-status"></div>
+    
     <div class="text"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
     <i class='bx bxs-user-circle'></i>
                     </button></div>
+                   
+                    
     </nav>
     <section class="home" id="homeNav">
        <?php include("user-dash-main.php") ?>
@@ -61,13 +67,16 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
     <section class="home" id="announNav">
         <?php include("user-announce.php")?>
     </section>
-
+    <section class="home" id="weatherNav">
+        <?php include("user-report.php") ?>
+    </section>
     <section class="home" id="centerNav">
        <?php include ('center.php') ?>
     </section>
     <section class="home" id="weatherNav">
         <?php include("weather.php") ?>
     </section>
+    
     
     
   

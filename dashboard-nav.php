@@ -31,6 +31,12 @@
                         <span class="text nav-text">Announcement</span>
                         </a>
                     </li>
+                    <li class="nav-link " id="weather-dash">
+                        <a href="#rprt" id="weather-dash">
+                        <i class='bx bx-radar iconi'></i>
+                        <span class="text nav-text">report</span>
+                        </a>
+                    </li>
                     <li class="nav-link ">
                         <a href="#userNav" id="user-dash">
                         <i class='bx bxs-user-account iconi'></i>
@@ -39,7 +45,7 @@
                     </li>
                     <li class="nav-link" id="center-dash">
                         <a href="#centerNav">
-                        <i class='bx bx-bell iconi'></i>
+                        <i class='bx bxs-location-plus iconi'></i>
                         <span class="text nav-text">Center's</span>
                         </a>
                     </li>
@@ -49,12 +55,13 @@
                         <span class="text nav-text">Weather</span>
                         </a>
                     </li>
-                    <li class="nav-link " id="announ-dash">
+                    <!-- <li class="nav-link " id="announ-dash">
                         <a href="control.php">
                         <i class='bx bxs-report iconi'></i>
                         <span class="text nav-text">Announcement</span>
                         </a>
-                    </li>
+                    </li> -->
+                    
                 </ul>
             </div>
             <div class="bottom-content">

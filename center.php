@@ -27,7 +27,7 @@
              <div class="loc-main-txt"><h3>Status</h3></div>
                 <div class="loc-box">
                     <div class="stats-loc">
-                       <table class="table table-hover">
+                       <table class="table table-hover" id="rtbl">
                             <thead>
                                 <th>Center</th>
                                 <th>Status</th>
@@ -39,11 +39,10 @@
                                 $query = $conn->query("SELECT * FROM status");
                                 while($data = mysqli_fetch_array($query)){
                                ?>
-                               <tr>
+                               <tr id="secondTable<?php echo $data['stats_id'] ?>">
                                     <td><?php echo $data['stats_name'] ?></td>
                                     <td><?php echo $data['stats_stats'] ?></td>
                                     <td><?php echo $data['stats_amnt'] ?></td>
-                                    
                                </tr>
                                <?php } ?>
                             </tbody>

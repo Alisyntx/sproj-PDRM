@@ -30,6 +30,7 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
     <link rel="stylesheet" href="css/location.css">
     <link rel="stylesheet" href="css/announ.css">
     <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/report.css">
     
     <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -58,17 +59,19 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
     <section class="home" id="announNav">
         <?php include("announce.php")?>
     </section>
-   
+    <section class="home" id="announNav">
+        <?php include("report.php")?>
+    </section>
     <section class="home" id="userNav">
         <div class="text">user</div>
         <?php include("users.php")?>
     </section>
-    <section class="home" id="centerNav">
-       <?php include ('center.php') ?>
-    </section>
     <section class="home" id="weatherNav">
         <?php include("weather.php") ?>
     </section>
+    
+    
+ 
     
     
   
@@ -77,6 +80,7 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
 <script src="jquery/weather.js"></script>
 <script src="css/script/nav-script.js"></script>
 <script src="bootstrap/js/popper.js"></script>
+<script src="bootstrap/js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="jquery/chart/graph.js"></script>
 </body>

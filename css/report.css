@@ -1,0 +1,15 @@
+.report-main-cs{
+    background-color: rgb(98, 98, 182);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.report-list{
+    width: 40%;
+    background-color: var(--pallet1);
+    height: auto;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-bottom: 1%;  
+}

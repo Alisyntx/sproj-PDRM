@@ -4,7 +4,8 @@
 
 	$conn = mysqli_connect("locaLhost","root","","disasterdb");
 	
-	$query = $conn->query("SELECT ann.ann_id, user.usr_username
+	$query = $conn->query("SELECT ann.
+	ann_id, user.usr_username
 				FROM ann
 				INNER JOIN user ON ann.ann_usr = user.usr_id");
 	$data = mysqli_fetch_array( $query );

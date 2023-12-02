@@ -25,6 +25,7 @@ $(document).ready( function() {
 			console.log(response);
 			$("#updateUser .status").html(response.message);
 			$('#tr_'+response.ID).html('<td class="sorting_1"> '+response.name+'</td><td> '+response.stats+'</td><td> '+response.amnt+'</td><td><button class="btn btn-warning edit" id="'+response.ID+'" data-bs-toggle="modal"data-bs-target="#exampleModal6"><i class="bx bx-edit-alt" style="font-size: 1.5rem;" ></i></button></td></tr>');
+			$('#secondTable'+response.ID).html('<td class="sorting_1"> '+response.name+'</td><td> '+response.stats+'</td><td> '+response.amnt+'</td></tr>');
 		},"json");
 		
 	});

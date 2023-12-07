@@ -9,7 +9,7 @@
 			?>
 <div class="user-tbl-list">
 			<div class="user-tbl-img">
-				<img src="<?php echo $data['usr_image'] ?>" class="img-thumbnail" alt="...">
+				<img src="<?php echo './' . $data['usr_image'] ?>" class="img-thumbnail" alt="...">
 			</div>
 			<h6 class="text-muted">Active</h6>
 			<div class="dropdown">

@@ -1,10 +1,8 @@
-// main upload  process
-
 $(document).ready(function(){
 
-    $('#uploadForm').submit(function(e){
+    $('#uploadFormUser').submit(function(e){
         e.preventDefault();
-        var url ="php/upload.php"; // Replace with the correct path to your PHP file
+        var url ="../php/upload.php"; // Replace with the correct path to your PHP file
         var formData = new FormData(this);
         $.ajax({
             url: url,
@@ -31,7 +29,7 @@ $(document).ready(function(){
                 }
                 
                 // Optionally reset the form
-                $('#uploadForm')[0].reset();
+                $('#uploadFormUser')[0].reset();
             },
             error: function(xhr, status, error){
                 console.error(error);

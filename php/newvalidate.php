@@ -33,7 +33,7 @@ if ($checkResult->num_rows === 1) {
         if ($username === 'admin') {
             $redirect = 'dashboard.php';
         } else {
-            $redirect = 'user-dashboard.php';
+            $redirect = 'userFiles/user-dashboard.php';
         }
 
         $response = array(

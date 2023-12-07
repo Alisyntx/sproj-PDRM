@@ -12,7 +12,7 @@ $user_id = $_SESSION["user"];
 $conn = mysqli_connect('localhost', 'root', '', 'disasterDB');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $target_dir = "../storage/";
+    $target_dir = "../../storage/";
     $target_file = $target_dir . basename($_FILES["image"]["name"]);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
             // Save file path in the database along with the user ID
-            $imagePath = "storage/" . htmlspecialchars(basename($_FILES["image"]["name"]));
+            $imagePath = "../storage/" . htmlspecialchars(basename($_FILES["image"]["name"]));
             $sql = "UPDATE user SET usr_image = '$imagePath' WHERE usr_username = '$user_id' ";
 
             if ($conn->query($sql) === TRUE) {

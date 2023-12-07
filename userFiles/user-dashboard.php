@@ -21,34 +21,32 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
     <title>DASHBOARD</title>
     
     
-    <link href="bootstrap/animate.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/weather.css" rel="stylesheet">
-    <link href="bootstrap/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="css/location.css">
-    <link rel="stylesheet" href="css/announ.css">
-    <link rel="stylesheet" href="css/modals.css">
-    <link rel="stylesheet" href="css/user-css/user-announ.css">
-    <link rel="stylesheet" href="css/user-css/user-report.css">
-    <link rel="stylesheet" href="css/user-css/user-report.css">
+    <link href="../bootstrap/animate.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/weather.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/location.css">
+    <link rel="stylesheet" href="../css/announ.css">
+    <link rel="stylesheet" href="../css/modals.css">
+    <link rel="stylesheet" href="user-css/user-announ.css">
+    <link rel="stylesheet" href="user-css/user-report.css">
     
     <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script type="text/javascript" src="jquery/jquery.js"></script>
+    <script type="text/javascript" src="../jquery/jquery.js"></script>
     <!-- chart script -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
-    <script src="jquery/upload.js"></script>
+    <script src="userajax/upload.js"></script>
 
     
 </head>
 <body onload="DefaultScreen()">
-    <script src="css/script/anim-dash.js"></script>
+    <script src="../css/script/anim-dash.js"></script>
     <!-- modalss -->
     <?php include('user-modals.php') ?>
     
-    <?php include('dashboard-nav.php') ?>
+    <?php include('user-dashboard-nav.php') ?>
     </nav>
     <nav class="topnav">
     <div class="text1">user</div>
@@ -71,10 +69,10 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
         <?php include("user-report.php") ?>
     </section>
     <section class="home" id="centerNav">
-       <?php include ('center.php') ?>
+       <?php include ('../center.php') ?>
     </section>
     <section class="home" id="weatherNav">
-        <?php include("weather.php") ?>
+        <?php include("../weather.php") ?>
     </section>
     
     
@@ -82,10 +80,10 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
   
     
 
-<script src="jquery/weather.js"></script>
-<script src="css/script/nav-script.js"></script>
-<script src="bootstrap/js/popper.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
-<script src="jquery/chart/graph.js"></script>
+<script src="../jquery/weather.js"></script>
+<script src="../css/script/nav-script.js"></script>
+<script src="../bootstrap/js/popper.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../jquery/chart/graph.js"></script>
 </body>
 </html>

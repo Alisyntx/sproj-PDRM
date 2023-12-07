@@ -1,9 +1,9 @@
 
-<script src="jquery/announ/post-announ.js"></script>
+<script src="../jquery/announ/post-announ.js"></script>
 
 <div class="announ-main-cs">
     <div class="announ-logo">
-        <img src="image/announ1.jpg" alt="">
+        <img src="../image/announ1.jpg" alt="">
     </div>
     <div class="announ-cont-main">
         <div class="announ-side">

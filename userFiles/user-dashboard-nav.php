@@ -3,7 +3,7 @@
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="image/logofin.png" alt="wuuwuw">
+                    <img src="../image/logofin.png" alt="wuuwuw">
                 </span>
                 <div class="text header-text">
                     <span class="name">Pahanocoy</span>
@@ -66,7 +66,7 @@
             </div>
             <div class="bottom-content">
                 <li class="">
-                    <a href="php/logout.php">
+                    <a href="../php/logout.php">
                     <i class='bx bx-log-out iconi'></i>
                     <span class="text nav-text">log-out</span>
                     </a>

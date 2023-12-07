@@ -1,4 +1,4 @@
-<script src="jquery/center/center.js"></script>
+<script src="../jquery/center/center.js"></script>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -56,15 +56,14 @@
                             $username = $row_dataUsr['usr_username'];
                             $firstname = $row_dataUsr['usr_firstname'];
                             $lastname = $row_dataUsr['usr_lastname'];
-                            $userimage = $row_dataUsr['usr_image'];
-                            
+                            $userimage = $row_dataUsr['usr_image'];              
                         }              
                 ?>
             <div class="left-user-m">
                 <div class="user-image">
                 <?php
                     if (!empty($userimage)) {
-                        echo '<img src="' . $userimage . '" alt="User Image">';
+                        echo '<img src="../' . $userimage . '" alt="User Image">';
                     } else {
                         echo '<p>No image found for the user.</p>';
                     }
@@ -100,7 +99,7 @@
       </div>
       <div class="modal-body">
         <div id="error-upload"></div>
-      <form class="upl-inp" enctype="multipart/form-data" method="post" id="uploadForm">
+      <form class="upl-inp" enctype="multipart/form-data" method="post" id="uploadFormUser">
         <input type="file" name="image" id="image">
         <input type="submit" value="Upload Image" id="uploadBtn" class="btn btn-secondary">
       </form>

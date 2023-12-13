@@ -2,7 +2,7 @@
 <div class="chart-cs" id="main-dash-cont">
           <div class="chart1-cs" id="chart1-js">
             <div class="chart-title">Years Analysis</div>
-            <div id="main" style="width: 600px;height:400px;"></div>
+            <div id="main" style="width: 600px;height:500px;"></div>
             <?php require("graph.php") ?>
    
      

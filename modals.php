@@ -1,5 +1,5 @@
 <script src="jquery/center/center.js"></script>
-<!-- Modal -->
+<!--  dashboard Modal -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content  modal-cost">
@@ -150,9 +150,7 @@
 </div>  
 </div>
 
-
 <!-- announcement modal -->
-
 <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-sm">
     <div class="modal-content  modal-cost">
@@ -168,6 +166,7 @@
   </div>
 </div>  
 </div>
+
 <!-- center modal -->
 <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-sm">
@@ -183,4 +182,14 @@
     </div>
   </div>
 </div>  
+</div>
+
+<!-- Report Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered">
+ 
+    </div>
+   
+  </div>
 </div>

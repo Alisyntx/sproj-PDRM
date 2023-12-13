@@ -50,8 +50,8 @@
     justify-items: start;
     flex-wrap: wrap;
     overflow-y: auto;
-    margin: 0 auto;
-    padding-bottom: 100px;
+    position: relative;
+    top: 6%;
 }
 .card{
     margin: 1%;
@@ -64,7 +64,7 @@
     border-radius: 8px;
     margin: 1%;
     width: 15vw;
-    height: 40vh;
+    height: 43vh;
     background-color: var(--pallet1);
 }
 .user-tbl-img img{

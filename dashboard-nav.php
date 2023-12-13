@@ -1,4 +1,4 @@
-<div id="anim-dashb" class="anim-dashb">
+
     <nav class="side-bar close" id="side-bar-js">
         <header>
             <div class="image-text">
@@ -20,48 +20,42 @@
                         <input type="search" placeholder="Search...">
                     </li>
                     <li class="nav-link ">
-                        <a href="#" id="main-dash">
+                        <a href="#homeNav" id="main-dash">
                         <i class='bx bx-home-heart iconi'></i>
                         <span class="text nav-text">dashboard</span>
                         </a>
                     </li>
                     <li class="nav-link ">
-                        <a href="#announNav" id="user-dash">
-                        <i class='bx bxs-report iconi'></i>
+                        <a href="#announNav" id="ann-dash">
+                        <i class='bx bxs-comment-detail iconi'></i>
                         <span class="text nav-text">Announcement</span>
                         </a>
                     </li>
                     <li class="nav-link " id="weather-dash">
-                        <a href="#rprt" id="weather-dash">
-                        <i class='bx bx-radar iconi'></i>
-                        <span class="text nav-text">report</span>
+                        <a href="#centerNav" id="weather-dash">
+                        <i class='bx bxs-location-plus iconi'></i>
+                        <span class="text nav-text">Center</span>
                         </a>
                     </li>
                     <li class="nav-link ">
-                        <a href="#userNav" id="user-dash">
-                        <i class='bx bxs-user-account iconi'></i>
-                        <span class="text nav-text">user's</span>
-                        </a>
-                    </li>
-                    <li class="nav-link" id="center-dash">
-                        <a href="#centerNav">
-                        <i class='bx bxs-location-plus iconi'></i>
-                        <span class="text nav-text">Center's</span>
-                        </a>
-                    </li>
-                    <li class="nav-link " id="weather-dash">
-                        <a href="#weatherNav" id="weather-dash">
+                        <a href="#weatherNav" id="user-dash">
+                        
                         <i class='bx bx-radar iconi'></i>
                         <span class="text nav-text">Weather</span>
                         </a>
                     </li>
-                    <!-- <li class="nav-link " id="announ-dash">
-                        <a href="control.php">
+                    <li class="nav-link" id="center-dash">
+                        <a href="#reportNav">
                         <i class='bx bxs-report iconi'></i>
-                        <span class="text nav-text">Announcement</span>
+                        <span class="text nav-text">Report</span>
                         </a>
-                    </li> -->
-                    
+                    </li>
+                    <li class="nav-link " id="weather-dash">
+                        <a href="#userNav" id="weather-dash">
+                        <i class='bx bxs-user-account iconi'></i>
+                        <span class="text nav-text">User</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="bottom-content">
@@ -83,3 +77,5 @@
                 </li>
             </div>
         </div>
+    </nav>
+    

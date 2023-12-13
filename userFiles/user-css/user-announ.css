@@ -3,9 +3,12 @@
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
+    margin-bottom: 40px;
+   
+}
+.list-cont{
     display: flex;
     align-items: center;
-  
 }
 .user-post-list i{
     font-size: 2rem;
@@ -21,5 +24,13 @@
     margin: 5%;
     color: var(--text-color);
     text-align: center;
+}
+.user-post-list span{
+    float: right;
+}
 
+.time-ago p{
+    display: block;
+    font-size: 0.8rem;
+    color: rgb(54, 51, 51);
 }

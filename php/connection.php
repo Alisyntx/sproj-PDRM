@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'disasterDB');
+$conn = mysqli_connect('localhost', 'root', '', 'complain');
 $error_message = "";
 
     if (!$conn) {

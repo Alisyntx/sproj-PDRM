@@ -39,7 +39,6 @@
     --text-color: #41644A;
     --user-text-color: #41644A;
 
-
     /* transition */
     --tran-02:all 0.2s ease;
     --tran-03:all 0.3s ease;
@@ -79,7 +78,7 @@ body.dark{
 
 /* reusable */
 .side-bar.close .text{
-    opacity: 0;
+    visibility: hidden;
 }
 .side-bar .text{
     font-size: 16px;
@@ -147,6 +146,7 @@ header .image-text .header-text{
     transform: translateY(-50%);
 
 }
+
 body.dark .side-bar header .togglei{
     color: var(--text-color);
     transform: rotate(180deg);
@@ -296,17 +296,17 @@ body.dark .switch::before{
     color: #FFF2CC;
     background-color: var(--pallet3);
     border-radius: 5px;
-    height: 450px;
+    height:500px;
 }
 .chart-cs{
-    height: 450px;
+    height: 600px;
     display: flex;
     overflow: hidden;
     align-items: center;
     justify-content: center;
 }
 #homeNav{
-margin-top: 10%;
+margin-top: 5%;
 }
 .chart-title{
     margin: 5px;
@@ -323,7 +323,7 @@ margin-top: 10%;
     margin-left: 20px;
     background-color: var(--pallet3);
     width: 30%;
-    height: 450px;
+    height: 500px;
     border-radius: 8px;
     display: flex;
     flex-wrap: wrap;

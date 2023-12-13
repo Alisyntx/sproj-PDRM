@@ -22,9 +22,7 @@
 					<li class="dropdown-item"><small class="text-muted">Age:</small> <?php echo $data['usr_age'] ?></li>
 					<li class="dropdown-item"><small class="text-muted">Email:</small> <?php echo $data['usr_email'] ?></li>
 					<li class="dropdown-item"><small class="text-muted">Number:</small> <?php echo $data['usr_contact'] ?></li>
-					<li class="dropdown-item"><small class="text-muted">Address:</small> <?php echo $data['usr_addr'] ?></li>
-					
-					
+					<li class="dropdown-item"><small class="text-muted">Address:</small> <?php echo $data['usr_addr'] ?></li>	
 				</ul>
 			</div>
 	</div>

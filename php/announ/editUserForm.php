@@ -1,11 +1,8 @@
 <?php 
 session_start();
 $conn = mysqli_connect("localhost","root","","disasterdb");
-$id = $_POST['akoSiID'];
-				
+$id = $_POST['akoSiID'];				
 $query = $conn->query("SELECT * FROM ann WHERE ann_id = '$id'");
-
-
 $data = mysqli_fetch_array( $query );
 ?>
 

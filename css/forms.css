@@ -31,6 +31,15 @@
 .main-form-cont .right-half {
     background-color: #34382b; /* Adjust the color as needed */
 }
+/* left div */
+.left-half{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-caption{
+  background-color: #34382b8c;
+}
 /* buttons */
 .main-btn-rt{
     display: flex;
@@ -99,6 +108,7 @@
     color: #00dbde;
     font-weight: 100;
     margin-top: 50px;
+    padding-bottom: 8px;
     margin-left: 40px;
 }
 /* forms */
@@ -254,3 +264,4 @@
     margin-top: 50px;
     margin-right: 60px;
 }
+

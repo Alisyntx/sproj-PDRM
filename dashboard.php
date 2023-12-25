@@ -19,17 +19,19 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin dashboard</title>
-    
+    <!-- bootstrap -->
     <link href="bootstrap/animate.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/weather.css" rel="stylesheet">
     <link href="bootstrap/css/font-awesome.css" rel="stylesheet">
+    <!-- custom -->
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/location.css">
     <link rel="stylesheet" href="css/announ.css">
     <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/report.css">
+    <link rel="stylesheet" href="assets/css/datatables.min.css">
     
     <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -49,7 +51,12 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
     <?php include('dashboard-nav.php') ?>
 
     <nav class="topnav">
-        <div class="text1">Admin</div>
+        <?php 
+        $conn = mysqli_connect("localhost","root","","disasterdb");
+        $query = $conn->query("SELECT * FROM user WHERE usr_id = '$session_user_id'");
+        $data = mysqli_fetch_array( $query ); 
+        ?>
+        <div class="text1"><span class="fw-semibold">ADMIN:&nbsp;</span> <?php echo $data['usr_firstname'] ?>  <?php echo $data['usr_lastname'] ?></div>
         <div class="text">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 <i class='bx bxs-user-circle'></i>
@@ -81,11 +88,21 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
         <?php include("users.php")?>
     </section>
 
+    <section class="home" id="genrepNav">
+        <?php include("genreport.php")?>
+    </section>
+ 
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/pdfmake.min.js"></script>
+    <script src="assets/js/vfs_fonts.js"></script>
+    <script src="assets/js/custom.js"></script>
 <script src="jquery/weather.js"></script>
 <script src="css/script/nav-script.js"></script>
 <script src="bootstrap/js/popper.js"></script>
 <script src="bootstrap/js/popper.min.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="jquery/chart/graph.js"></script>
+
 </body>
 </html>

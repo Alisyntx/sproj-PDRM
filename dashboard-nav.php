@@ -56,6 +56,12 @@
                         <span class="text nav-text">User</span>
                         </a>
                     </li>
+                    <li class="nav-link " id="weather-dash">
+                        <a href="#genrepNav">
+                        <i class='bx bxs-food-menu iconi'></i>
+                        <span class="text nav-text">User</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="bottom-content">

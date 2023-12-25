@@ -149,6 +149,66 @@
   </div>
 </div>  
 </div>
+<!-- announcement Count -->
+<div class="modal fade" id="announModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content  modal-cost">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Total Announcement</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <?php 
+        $sql = "SELECT COUNT(ann_text) AS total_ann FROM ann";
+
+        $result = $conn->query($sql);
+
+        $row = $result->fetch_assoc();
+        $totalUsers = $row['total_ann'];
+                    
+        ?>
+        <div class="user-count">
+          <div class="user-count-cotn">
+            <?php echo $totalUsers; ?>
+          </div> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>  
+</div>
+<!-- issue Count -->
+<div class="modal fade" id="issueModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content  modal-cost">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Total Reports</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <?php 
+        $sql = "SELECT COUNT(rpt_message) AS total_rep FROM report";
+
+        $result = $conn->query($sql);
+
+        $row = $result->fetch_assoc();
+        $totalUsers = $row['total_rep'];
+                    
+        ?>
+        <div class="user-count">
+          <div class="user-count-cotn">
+            <?php echo $totalUsers; ?>
+          </div> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>  
+</div>
 
 <!-- announcement modal -->
 <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

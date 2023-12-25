@@ -22,15 +22,17 @@
                     </button>
                 </div>
                 <div class="center-card1">
-                    <h4><i class='bx bx-clinic'></i></h4>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Check
+                    <h4> <i class='bx bxs-comment-detail iconi'></i></h4>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#announModal">     
+                        <marquee behavior="scroll" direction="left">
+                        Announcement
+                        </marquee>
                     </button>
                 </div>
                 <div class="center-card1">
-                    <h4><i class='bx bx-clinic'></i></h4>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Check
+                    <h4><i class='bx bxs-report iconi'></i></h4>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#issueModal">
+                    Issue
                     </button>
                 </div>
              </div>

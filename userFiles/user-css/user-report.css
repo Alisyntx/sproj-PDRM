@@ -43,7 +43,9 @@
   font-weight: 500;
   margin-left: 3%;
   color: var(--text-color);
+  display: flex;
 }
+
 .rprt-status{
   height: 80%;
   width: 20%;

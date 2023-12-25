@@ -152,7 +152,7 @@ body.dark .side-bar header .togglei{
     transform: rotate(180deg);
 }
 .side-bar .menu{
-    margin-top: 35px;
+    margin-top: 14px;
 }
 .menu .search-box{
     background: var(--primary-color-light);
@@ -195,7 +195,7 @@ body.dark .side-bar li a:hover .text{
     color: var(--text-color);
 }
 .side-bar .menu-bar{
-    height: calc(100% - 50px);
+    height: calc(100% - 60px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -330,6 +330,11 @@ margin-top: 5%;
     justify-content: space-around;
     padding: 2%;
 }
+.center-card1 button marquee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .center-card1{
     position: relative;
     width: 40%;
@@ -382,6 +387,8 @@ margin-top: 5%;
     float: left;
     margin-left: 3%;
     color: var(--text-color);
+    display: flex;
+    align-items: center;
 }
 .topnav .text button{
     background-color: transparent;

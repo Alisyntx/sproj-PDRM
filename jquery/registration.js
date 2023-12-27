@@ -16,8 +16,6 @@ $(document).ready(function(){
                         $('#error-msg').fadeOut();
                     },5000);
                 }
-              
         },"json");
     });
-    
 });

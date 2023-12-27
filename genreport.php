@@ -1,13 +1,16 @@
 <script src="jquery/genreport/genreport.js"></script>
 <div class="genreportcontainer">
     <div class="genreportformcont">
-            <div class="genreportformcont1Title">
-                <h4>Generate Report /</h4>
+            <div class="genreportformcont1Title mt-2">
+                <button id="genshowbtn1"><h4>Generate Report /</h4></button>
                 <button class="ms-1" id="genshowbtn"><h4> Show List</h4></button>
             </div>
          <div class="genreportflex">
-            <form class="genreportForms" id="genreportForms">
+           
+            <form class="genreportForms" id="genreportForms"> 
+                
                     <div class="genreportForms1">
+                        <div class="genstatus" id="genstatus"></div>
                         <div class="coolinput">
                             <label for="input" class="text">Date:</label>
                             <input type="date" placeholder="Write here..." name="gendate" class="input">
@@ -78,9 +81,6 @@
                                 <td> <?php echo $data['gen_dispop'] ?> </td>
                                 <td> <?php echo $data['gen_res'] ?> </td>
                                 <td> 
-                                    <button type="button" class="btn btn-warning edit" id="<?php echo $data['gen_ID'] ?>" data-bs-toggle="modal"data-bs-target="#exampleModal5"> 
-                                    <i class="bx bxs-message-square-edit"></i>
-                                    </button> 
                                     <button class="btn btn-danger del" id="<?php echo $data['gen_ID'] ?>"> 
                                     <i class="bx bxs-message-square-minus"></i>
                                     </button> 

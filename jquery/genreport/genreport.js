@@ -3,6 +3,17 @@ $(document).ready(function(){
     $("#genshowbtn").click(() =>{
 		$("#genreportForms").hide(500);
 	});
+    $("#genshowbtn1").click(() =>{
+		$("#genreportForms").show(500);
+	});
+	$('#example').on('click','.del', function() {
+		var url = 'php/genreport/genreportdel.php';
+		var getID = $(this).attr("id");
+		var me = $(this);
+		$.post(url,{ akoSiID: getID },function(response) {
+			me.parent().parent().fadeOut();
+		});
+	});
     $("#genreportForms").submit( function(e) {
 		e.preventDefault();	
         alert();
@@ -11,9 +22,11 @@ $(document).ready(function(){
 		$.post(url, data, function(response) {
 			
 			console.log(response);
-			$(".status").html(response.message);
-            alert(response.message);
-			$("#nup").prepend('<tr class="animated rubberBand"><td class="sorting_1"> '+response.lastID+' </td><td> '+response.username+' </td><td> '+response.admin+' </td><td><button class="btn btn-warning edit" id="'+response.lastID+'" data-bs-toggle="modal"data-bs-target="#exampleModal5"><i class="bx bxs-message-square-edit"></i></button> <button class="btn btn-danger del" id="'+response.lastID+'"><i class="bx bxs-message-square-minus"></i></button></td></tr>');
+			$(".genstatus").html(response.message);
+			setTimeout(function () {
+				$(".genstatus").fadeOut();
+			 }, 1000);
+			$("#example tbody").prepend('<tr class="animated rubberBand"><td class="sorting_1"> '+response.lastID+' </td><td> '+response.a+' </td><td> '+response.b+' </td><td> '+response.c+' </td><td> '+response.d+' </td><td> '+response.e+' </td><td> '+response.f+' </td><td> '+response.g+' </td><td> '+response.h+' </td><td><button class="btn btn-danger del" id="'+response.lastID+'"><i class="bx bxs-message-square-minus"></i></button></td></tr>');
 		},"json");	
 	});
 });

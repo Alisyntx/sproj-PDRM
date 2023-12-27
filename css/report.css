@@ -173,7 +173,7 @@
   }
   .genreportformcont{
     width: 100%;
-    height: 95%;
+    height: 98%;
     background-color: var(--pallet1);
   }
   .genreportformcont1Title{
@@ -267,7 +267,8 @@
   }
   .gentablecont{
     width: 100%;
-    margin-left: 2%;
+    height: 540px;
+    margin-left: 1%;
     overflow-x: scroll;
     overflow-y: scroll;
     margin-right: 2%;

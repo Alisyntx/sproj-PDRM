@@ -120,7 +120,7 @@
     
               <div class="slide2" id="slide2">
                 <div class="user-box">
-                    <input type="number" name="contact" required="">
+                    <input type="number" name="contact" id="numfeedback" required="" >
                     <label>Contact#</label>
                 </div>
                 <div class="user-box">

@@ -3,10 +3,7 @@
           <div class="chart1-cs" id="chart1-js">
             <div class="chart-title">Years Analysis</div>
             <div id="main" style="width: 600px;height:500px;"></div>
-            <?php require("graph.php") ?>
-   
-     
-    </script>
+            <?php require("graph1.php") ?>
             </div>  
             <div class="act-rpts-cs" id="act-rpts-js">
                 <div class="center-card1">

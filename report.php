@@ -18,7 +18,7 @@
                     <span class="report-footer">
                         <p>
                             <?php echo $data['usr_firstname'] ?>
-                            <a href="#" type="button" class="link-secondary view" data-bs-toggle="modal" data-bs-target="#exampleModal" id="<?php echo $data['rpt_id'] ?>"><i class='bx bxs-info-circle'></i></a>             
+                            <a href="#" type="button" class="link-secondary view" data-bs-toggle="modal" data-bs-target="#reportModal" id="<?php echo $data['rpt_id'] ?>"><i class='bx bxs-info-circle'></i></a>             
                         </p>
                     </span>
             </div>
@@ -33,8 +33,13 @@
             ?>
             <form class="form" id="form-sms">
                 <div class="form-group">
-                <label for="email">Active Numbers</label>
-                 <input type="number" name="number">
+                <label for="">Active Numbers</label>
+                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm  example">
+                        <option selected>show numbers</option>
+                        <?php while($data = mysqli_fetch_array( $query )){ ?>
+                        <option value=""><?php echo '+63'.$data['usr_contact']; ?></option>
+                        <?php } ?>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="textarea">Message</label>

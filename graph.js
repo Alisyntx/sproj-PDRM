@@ -2,7 +2,7 @@ $(document).ready(function () {
   // Fetch data using AJAX
   $.ajax({
     type: 'GET',
-    url: 'graph.php',
+    url: 'graph1.php',
     dataType: 'json',
     success: function (data) {
       // Render chart with the fetched data

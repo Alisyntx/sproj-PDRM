@@ -7,8 +7,6 @@
     </div>
     <div class="announ-cont-main">
         <div class="announ-side">
-
-		<script></script>
         
         </div>
         <div class="announ-right">
@@ -16,7 +14,7 @@
                 <div class="announ-icon"></div>
                     <form id="awts" class="input-container">
 					<input type="hidden" name="session" value="<?php echo $session_user_id = $_SESSION['user_id'];?>">
-                    <input type="text" placeholder="Enter Text" name="text1" id="text" class="input-field">
+					<textarea class="form-control input-field" name="text1" id="exampleFormControlTextarea1" rows="1"></textarea>
                     <label class="input-label" for="text">announcement</label>
                     <button type="submit" class="btn btn-primary announ-btn" id="postBtn">POST</button>
                     </form>     
@@ -37,7 +35,6 @@
 				$query = $conn->query("SELECT ann.ann_id, ann.ann_text, user.usr_username
 				FROM ann
 				INNER JOIN user ON ann.ann_usr = user.usr_id");
-				
 				
 				while( $data = mysqli_fetch_array( $query ) ) {
 			?>

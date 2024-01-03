@@ -1,5 +1,7 @@
 
 <script src="../jquery/announ/post-announ.js"></script>
+<script src="userajax/user-issueedit.js"></script>
+
 
 <div class="announ-main-cs">
     <div class="announ-logo">
@@ -9,10 +11,31 @@
         <div class="announ-side">
         <div class="news-ann">
             <div class="news-title">
-                <h5>Pdrm News</h5>
+                <h5>Your Issue</h5>
             </div>
              <div class="news-list">
-                
+             <?php
+                    $session_user_id = $_SESSION['user_id'];
+                    $conn = mysqli_connect("localhost","root","","disasterdb");	
+                    $query = $conn->query("SELECT * FROM report 
+                    INNER JOIN user ON rpt_id_usr = usr_id 
+                    INNER JOIN reportdesc ON report.rpt_desc_fkid = rpt_desc_id 
+                    WHERE rpt_id_usr = $session_user_id");
+                    while( $data = mysqli_fetch_array( $query ) ) {
+                ?>  
+            <div class="report-usr" id="<?php echo $data['rpt_id']; ?>">
+                <div class="report-contuser" id="report-contuser">
+                            <button  type="button" class="btnUserList edit" id="<?php echo $data['rpt_id_usr'] ?>" data-bs-toggle="modal" data-bs-target="#issModal">
+                             <?php echo $data['rpt_desc'] ?>
+                            </button>
+                </div>
+                    <span class="report-footer">
+                        <p>
+                                       
+                        </p>
+                    </span>
+            </div>
+                <?php } ?> 
              </div>
         </div>
         </div>

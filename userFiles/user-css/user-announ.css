@@ -4,7 +4,6 @@
     margin: 10px;
     border-radius: 8px;
     margin-bottom: 40px;
-   
 }
 .list-cont{
     display: flex;
@@ -25,6 +24,7 @@
     color: var(--text-color);
     text-align: center;
 }
+
 .user-post-list span{
     float: right;
 }
@@ -33,4 +33,23 @@
     display: block;
     font-size: 0.8rem;
     color: rgb(54, 51, 51);
+}
+.report-contuser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btnUserList{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--pallet3);
+    border: none;
+}
+.btnUserList:hover{
+    background-color: var(--pallet2);
+    transition: 1s;
+}
+.news-list{
+    margin: 2%;
 }

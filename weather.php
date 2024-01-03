@@ -1,5 +1,5 @@
  
-        <div class="text"> <div class="title-w"><h1>Five Days Weatherforcast</h1>
+        <div class="text"> <div class="title-w mt-4"><h1>Five Days Weatherforcast</h1>
         <p id="cityName">Bacolod
             Negros Occidental
             Pahanocoy</p></div></div>

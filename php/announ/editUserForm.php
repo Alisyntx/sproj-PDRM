@@ -12,7 +12,7 @@ $data = mysqli_fetch_array( $query );
 		<div class="form-group">
 			<input type="hidden" name="session" value="<?php echo $session_user_id = $_SESSION['user_id'];?>">
 			<label> text </label>
-			<input type="text" name="text1" class="form-control" value="<?php echo $data['ann_text'] ?>" /> 
+  			<textarea class="form-control" name="text1" id="exampleFormControlTextarea1" rows="3"><?php echo $data['ann_text'] ?></textarea>
 		</div>
 		<button type="submit" class="btn btn-primary pull-right mt-3"> 
 			<i class="glyphicon glyphicon-floppy-disk"> </i> Save 

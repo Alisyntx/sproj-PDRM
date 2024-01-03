@@ -4,11 +4,11 @@ $(document).ready(function(){
 		var getID = $(this).attr("id")
 		$.post(url,{ akoSiID: getID },function(response) {
 			
-			$('.modal-dialog').html(response);
+			$('.report-dialog').html(response);
 		});
 
 	});
-    $('#exampleModal').on('click','.delete',function(){
+    $('#reportModal').on('click','.delete',function(){
 		var url = 'php/report/deleteReportPhp.php';
 		var getID = $(this).attr("id");
 		$.post(url, { akoSiID: getID }, function(response) {

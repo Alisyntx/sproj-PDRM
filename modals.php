@@ -212,7 +212,7 @@
 
 <!-- announcement modal -->
 <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content  modal-cost">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Edit Post</h5>
@@ -246,8 +246,8 @@
 
 <!-- Report Modal -->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-   <div class="modal-dialog modal-dialog-centered">
+<div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog report-dialog modal-dialog-centered">
  
     </div>
    

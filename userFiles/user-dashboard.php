@@ -38,6 +38,9 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
     <!-- chart script -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
     <script src="userajax/upload.js"></script>
+    <!-- tiny mce fuck -->
+    <script src="../tinymce/tinymce.min.js"></script>
+
 
     
 </head>

@@ -22,6 +22,20 @@ $(document).ready(function(){
         }
         
       });
+      $('#numfeedback').on('input', function() {
+        if ($(this).val().trim().length === 0) {
+          $('#error-msg').hide(); // Clear the warning message
+        } else if ($(this).val().length < 10) {
+          $('#error-msg').fadeIn(700).text('please follow ex: 9156510184');
+          $('#submit-js').css('visibility','hidden');
+        }else{
+          $('#error-msg').fadeIn(500).text('you got it!');
+          setTimeout(()=>{
+            $('#error-msg').fadeOut(500);
+          },1000);
+        }
+        
+      });
 
       $('#confirmPassword').on('input', function(){
         var Password = $('#passwordinp').val();

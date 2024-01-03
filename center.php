@@ -1,5 +1,7 @@
 
-<div class="text">Available Evacuation Center</div>
+<div class="text">
+    <h3>Available Evacuation Center</h3>
+</div>
           <div class="loc-flex">
             <div class="loc-box-head">
                         <iframe class="loc-map" src="https://www.google.com/maps?q=10.613426415322568,122.92690831355901&z=15&t=k&output=embed" style="width: 100%; height:100%;"></iframe>

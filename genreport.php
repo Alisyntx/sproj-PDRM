@@ -49,8 +49,8 @@
                     </div>
             </form>
                 <div class="gentablecont" id="gentablecont">
-                    <table id="example" class="table table-striped table-bordered">
-                        <thead class="table-dark">
+                    <table id="example" class="table table-hover">
+                        <thead class="table-success">
                             <tr>
                                 <th> ID </th>
                                 <th> Date </th> 
@@ -70,7 +70,7 @@
                             $query = $conn->query("SELECT * FROM genreport");	
                             while( $data = mysqli_fetch_array( $query ) ) {
 			            ?>
-                            <tr id="tr_<?php echo $data['gen_ID'] ?>">
+                            <tr id="tr_<?php echo $data['gen_ID'] ?>" class="table-light">
                                 <td> <?php echo $data['gen_ID'] ?> </td>
                                 <td> <?php echo $data['gen_date'] ?> </td>
                                 <td> <?php echo $data['gen_distyp'] ?> </td>

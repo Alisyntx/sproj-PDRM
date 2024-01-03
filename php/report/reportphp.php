@@ -23,7 +23,6 @@
 					<span class="report-footer">
 						<p>
 							<?php echo $data['usr_firstname'] ?>
-							<a href="#" type="button" class="link-secondary view" data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class='bx bxs-info-circle'></i></a>
 						</p>
 					</span>
 				</div>

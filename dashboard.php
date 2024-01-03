@@ -92,11 +92,11 @@ if (empty($_SESSION['user']) || empty($_SESSION['user_id'])) {
         <?php include("genreport.php")?>
     </section>
  
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/datatables.min.js"></script>
-    <script src="assets/js/pdfmake.min.js"></script>
-    <script src="assets/js/vfs_fonts.js"></script>
-    <script src="assets/js/custom.js"></script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/datatables.min.js"></script>
+<script src="assets/js/pdfmake.min.js"></script>
+<script src="assets/js/vfs_fonts.js"></script>
+<script src="assets/js/custom.js"></script>
 <script src="jquery/weather.js"></script>
 <script src="css/script/nav-script.js"></script>
 <script src="bootstrap/js/popper.js"></script>
